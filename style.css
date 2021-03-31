@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700i");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -120,7 +123,7 @@ div#header {
   height: 132px;
   background: #ffc815;
   top: 0px;
-  left: -26px;
+  left: -28.5px;
 }
 /*End of topSection*/
 
@@ -266,13 +269,13 @@ button#aboutMeBtn:after {
 }
 #myInfoDetails h3 {
   color: #888;
-  font-family: sans-serif;
-  font-size: 1em;
+  font-family: cursive;
+  font-size: 1.5em;
 }
 #myInfoDetails h2 {
-  font-family: monospace;
+  font-family: cursive;
   padding: 0px 181px 0px 0px;
-  font-size: 22px;
+  font-size: 14px;
   margin-top: 10px;
 }
 #myInfoDetails p {
@@ -575,8 +578,9 @@ div#services ul li {
 }
   #services button:hover {
   background: #000000;
-/*End of serviceSection*/
   }
+/*End of serviceSection*/
+
 /*Starting of skillSection*/
 #skillSection {
   padding: 30px;
@@ -621,6 +625,13 @@ button#skillBtn:after {
   bottom: -16px;
   left: 0;
   background: #ffc815;
+}
+.progressBar {
+    margin-bottom: 30px;
+    margin-top: 75px;
+}
+.progressBarItemsContainer {
+    margin-top: 55px;
 }
 /*End of skillSection*/
 
@@ -782,10 +793,10 @@ div#footerItemContainer {
   display: flex;
   flex-direction: row;
 }
-div#footerItem {
-  margin-right: 50px;
+div#footerItem01 {
+  margin-right: 47px;
 }
-div#footerItem h2 {
+div#footerItem01 h2 {
   color: white;
   font-family: monospace;
   font-size: 23px;
@@ -793,7 +804,7 @@ div#footerItem h2 {
   margin-bottom: 50px;
   position: relative;
 }
-div#footerItem h2:after {
+div#footerItem01 h2:after {
   content: "";
   position: absolute;
   bottom: -32%;
@@ -802,7 +813,7 @@ div#footerItem h2:after {
   width: 70px;
   height: 3px;
 }
-#footerItem #links a {
+#footerItem01 #links a {
   color: black;
   background: #fdc815;
   padding: 10px;
@@ -820,15 +831,22 @@ i.fab.fa-linkedin-in,
 i.fab.fa-whatsapp {
   padding: 3px;
 }
-#footerItem #links a:hover {
+#footerItem01 #links a:hover {
   color: #00000080;
 }
+#footerItem01 h4 {
+    padding: 2px 0;
+}
 h4 a {
-  color: #ffffff69;
+  color: #ffffff;
   text-decoration: none;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 16px;
+  font-family:monospace;
+  font-size: 12px;
   font-weight: 300;
+  transition:0.3s all;
+}
+h4 a:hover {
+	color:#ffffffa6;
 }
 i.fas.fa-phone-alt,
 i.fas.fa-map-marker-alt,
@@ -855,8 +873,11 @@ div#copywrite {
   font-family: arial;
   position: relative;
 }
-span {
-  color: #fdc815;
+.numberToCount span {
+  color: #888;
+}
+#copywrite span{
+	color:#fdc815;
 }
 div#copywrite::before {
   content: "";
